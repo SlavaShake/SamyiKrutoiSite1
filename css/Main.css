@@ -1,0 +1,126 @@
+body
+    {
+        background-image:url(../photo/kirpich.jpg);
+
+        background-repeat: repeat;
+    }
+
+.header {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    width:1200px;
+    height:190px;
+    border:1px solid #000000;
+    background-image: url("../photo/oboi1.11.bmp");
+}
+.menu1 {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    width:1200px;
+    height:320px;
+    border:1px solid #000000;
+    background-image: url("../photo/main1.jpg");
+    -moz-background-size:  cover;
+    -webkit-background-size:  cover;
+    -o-background-size:  cover;
+
+    background-repeat: no-repeat;
+
+}
+.menu {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    width:1200px;
+    height:30px;
+
+
+}
+
+.pages {
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+}
+.content {
+    margin-right:10px;
+    width:892px;
+    height:1500px;
+    border:1px solid #000000;
+    background:brown;
+    float:left;
+}
+.sidebar {
+    width:292px;
+    height:1500px;
+    border:1px solid #000000;
+    background:blue;
+    float:left;
+    background-image: url("../photo/telka.jpg");
+    -moz-background-size:  cover;
+    -webkit-background-size:  cover;
+    -o-background-size:  cover;
+
+    background-repeat: no-repeat;
+
+}
+.foot {
+    clear:both;
+}
+.footer {
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+    height:100px;
+    border:1px solid #000000;
+    background: red;
+}
+.menu td
+{
+    height: auto;
+    width: auto;
+    
+
+}
+.footer h1
+{
+    color: yellow;
+}
+
+button.css1button,button.css2button,button.css3button,button.css4button,button.css5button{
+    width: 150px;
+    height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+            top,
+            #ff0a0a 0%,
+            #b01515);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#ff0a0a),
+            to(#b01515));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
+    box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
+    text-shadow:
+    0px -1px 0px rgba(000,000,000,0.4),
+    0px 1px 0px rgba(255,255,255,0.3);
+    text-align: center;
+    line-height: 3px;
+}

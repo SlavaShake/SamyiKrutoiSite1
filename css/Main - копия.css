@@ -1,0 +1,45 @@
+body
+    {
+        background-image:url(../photo/oboi3.jpg);
+        -moz-background-size:  cover;
+        -webkit-background-size:  cover;
+        -o-background-size:  cover;
+        background-size:  cover;
+        background-repeat: no-repeat;
+    }
+
+.table table
+    {   background-image: url("../photo/kirpich.jpg");
+        width: 75%;
+        border-color: royalblue;
+        border-style: solid;
+        border-width: 2px;
+        height: 100%;
+        margin: auto;
+        rules: all;
+    }
+td#head
+    {
+
+        height: 190px;
+        background-image: url("../photo/oboi1.11.bmp");
+
+    }
+td#m1,td#m2,td#m3,td#m4,td#m5,td#m6
+{
+    height: 30px;
+    width: 175px;
+    background-color: #ffffff;
+    color: #000000;
+}
+td#new,td#content
+{
+    background-image: url("../photo/oboi2.jpg");
+    border-style: solid;
+    border-color: fuchsia;
+    border-width: 2px;
+}
+td#down
+{
+    color: yellow;
+}
