@@ -3,26 +3,48 @@
 
 
     <head lang="en">
+        <script type="text/javascript">
+            function digitalWatch() {
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+                 var year = date.getFullYear();
+                 var month = date.getMonth();
+                 var day = date.getDay();
+                if (month < 10) month="0"+month;
+                if (day <10) day="0"+day;
+                if (hours < 10) hours = "0" + hours;
+                if (minutes < 10) minutes = "0" + minutes;
+                if (seconds < 10) seconds = "0" + seconds;
+                document.getElementById("digital_watch").innerHTML = year+"."+month+"."+day+"      "+hours + ":" + minutes + ":" + seconds;
+                setTimeout("digitalWatch()", 1000);
+            }
+        </script>
 
     <meta charset="UTF-8">
     <title>Linux Progekt</title>
     <link rel="stylesheet" type="text/css"  href="css/Main.css" >
     </head>
 
-<body>
+<body onload="digitalWatch()">
 
 
 <div class="header">
-    
+
+
 </div>
 
 
 <div class="menu1">
     <table>
+
         <td id="youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs"
                                  frameborder="0" allowfullscreen></iframe></td>
         <td>
-            <a href="Main.html"><img src="photo/logo/logo_red_teni.png"></a>
+
+            <a href="Main.html"><img src="photo/logo/logo_black.png"></a>
+            <p class="button"id="digital_watch"></p>
             </pre>
             <form action="login.php" method="post" name="l_form">
                 <table>
@@ -41,38 +63,62 @@
                     </tbody>
                 </table>
             </form>
-<pre>
         </td>
     </table>
 </div>
 
 <div class="menu">
-    <table>
+   <!--<table>
         <td><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main</button></form></td>
         <td><form><button type="button" name="" value="" class="css2button" onclick='location.href="Server.html"'>Server</button></form></td>
         <td><form><button type="button" name="" value="" class="css3button" onclick='location.href="Programing.html"'>Programing</button></form></td>
         <td><form><button type="button" name="" value="" class="css4button" onclick='location.href="Tree.html"'>Tree</button></form></td>
         <td><form><button type="button" name="" value="" class="css5button" onclick='location.href="Ubuntu.html"'>Ubuntu</button></form></td>
+        <td class="button"id="digital_watch"></td>
 
-    </table>
+    </table>-->
+    <ul class="nav">
+        <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main</button></form>
+            <ul>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.1</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.2</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.3</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.4</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.5</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.6</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main1.7</button></form></li>
+            </ul>
+        </li>
+        <li><form><button type="button" name="" value="" class="css2button" onclick='location.href="Server.html"'>Server</button></form>
+            <ul>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.1</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.2</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.3</button></form>
+                    <ul>
+                        <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.3.1</button></form></li>
+                        <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.3.2</button></form></li>
+                    </ul>
+                </li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.4</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.5</button></form></li>
+                <li><form><button type="button" name="" value="" class="css1button" onclick='location.href="Main.html"'>Main2.6</button></form></li>
+            </ul>
+        </li>
+        <li><form><button type="button" name="" value="" class="css3button" onclick='location.href="Programing.html"'>Programing</button></form></li>
+        <li><form><button type="button" name="" value="" class="css4button" onclick='location.href="Tree.html"'>Tree</button></form></li>
+        <li><form><button type="button" name="" value="" class="css5button" onclick='location.href="Ubuntu.html"'>Ubuntu</button></form></li>
+        </ul>
 </div>
 
 
 <div class="pages">
     <div class="content">
-        Linux (Listeni/ˈlɪnəks/ [ˈlɪnəks]?[1][2] или [ˈlɪnʊks]?[3][4][5]), также Ли́нукс — общее название Unix-подобны
-        х операционных систем, основанных на одноимённом ядре. Ядро Linux создаётся и распространяется в соответствии с моделью
-        разработки свободного и открытого программного обеспечения. Поэтому общее название не подразумевает какой-либо единой
-        «официальной» комплектации Linux; они распространяются в основном бесплатно в виде различных готовых дистрибутивов,
-        имеющих свой набор прикладных программ и уже настроенных под конкретные нужды пользователя.
-
-        На начальном этапе Linux бесплатно разрабатывался только энтузиастами-добровольцами, но с успехом Linux и его массовым
-        коммерческим использованием дорабатывать ОС и вносить свой вклад стали и компании, со временем став значительной силой.
-        Подавляющее большинство ПО в современных дистрибутивах по-прежнему доступно по свободным лицензиям, как правило, за
-        исключением небольшого количества проприетарных компонентов. В 2008 году расчёты показывали, что для того, чтобы «с
-        нуля» разработать систему, аналогичную Fedora 9, потребовалось бы затратить 10,8 млрд долл.[6] Совокупная себестоимость
-        ядра Linux оценена в более чем 1 млрд евро (около 1,4 млрд долл.). Только за 2008 год себестоимость ядра Linux увеличилась
-        на 225 млн евро. В системе Linux воплощён труд в эквиваленте 73 тыс. человеко-лет[7][8].
+        <div class="content1"></div>
+        <div class="content1"></div>
+        <div class="content1"></div>
+        <div class="content1"></div>
+        <div class="content1"></div>
+        <div class="content1"></div>
     </div>
 
     <div class="sidebar"></div>
@@ -81,7 +127,7 @@
 </div>
 
 <div class="footer">
-    <h1>By SlavaShake</h1>
+    <img src="photo/logo/1.png">
 </div>
 
 </body>
